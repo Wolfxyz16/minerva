@@ -1,6 +1,6 @@
 import { createWebHistory, createRouter } from "vue-router";
-import Home from "../views/Home.vue";
-import About from "../views/About.vue";
+import Inicio from "../views/Inicio.vue";
+import Nosotros from "../views/Nosotros.vue";
 
 const routes = [
 //   { 
@@ -10,16 +10,16 @@ const routes = [
 //   },
   {
     path: "/",
-    name: "Home",
-    component: Home,
+    name: "Inicio",
+    component: Inicio,
     meta: {
         title: 'Minerva - Inicio'
     }
   },
   {
-    path: "/about",
-    name: "About",
-    component: About,
+    path: "/nosotros",
+    name: "Nosotros",
+    component: Nosotros,
     meta: {
         title: 'Sobre nosotros'
     }
