@@ -1,10 +1,12 @@
 require('./bootstrap');
 
 import { createApp } from 'vue';
+import App from './Main';
+import router from './router';
 
 const app = createApp({});
 
-import App from './components/App';
+app.use(router);
 
 app.component('App', App);
 
