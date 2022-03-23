@@ -13,7 +13,6 @@
         <script src="/js/app.js"></script>
     </head>
     <body>
-        <h1>Hola mundo desde Blade</h1>
         <div id="app">
             <App></App>
         </div>
