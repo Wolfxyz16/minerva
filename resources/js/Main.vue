@@ -1,9 +1,9 @@
 <template>
-    <router-link :to="{name: 'Home'}">
+    <router-link :to="{name: 'Inicio'}">
         Home
     </router-link>
 
-    <router-link :to="{name: 'About'}">
+    <router-link :to="{name: 'Nosotros'}">
         About
     </router-link>
 
