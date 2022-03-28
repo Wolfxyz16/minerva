@@ -1,6 +1,8 @@
 import { createWebHistory, createRouter } from "vue-router";
 import Inicio from "../views/Inicio.vue";
 import Nosotros from "../views/Nosotros.vue";
+import FisicaInicio from "../views/fisica/FisicaInicio.vue";
+import MatematicasInicio from "../views/matematicas/MatematicasInicio.vue";
 
 const routes = [
 //   { 
@@ -14,7 +16,19 @@ const routes = [
     component: Inicio,
     meta: {
         title: 'Minerva - Inicio'
-    }
+    },
+    children: [
+      {
+        path: "fisica",
+        name: "Fisica",
+        component: FisicaInicio
+      },
+      {
+        path: "matematicas",
+        name: "Matematicas",
+        component: MatematicasInicio
+      }
+    ]
   },
   {
     path: "/nosotros",
