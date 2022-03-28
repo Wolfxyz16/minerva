@@ -1,0 +1,18 @@
+@font-face {
+    font-family: 'MPlus1';
+    src: url(/font/MPLUS1-VariableFont_wght.ttf);
+}
+
+html {
+    height: 100%;
+    color: #F1F1F1;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    overflow: hidden;
+    font-family: 'MPlus1','Courier New', Courier, monospace;
+    background: radial-gradient(ellipse at bottom, #1B2735 100%, #090A0F 0%);
+}
