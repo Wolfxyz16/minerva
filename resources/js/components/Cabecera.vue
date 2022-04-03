@@ -7,6 +7,10 @@
         <router-link :to="{name: 'Nosotros'}">
             Minerva
         </router-link>
+
+        <router-link :to="{name: 'Examen'}">
+            Crear examen
+        </router-link>
     </header>
 </template>
 

@@ -5,8 +5,10 @@
             <router-link :to="{name: 'Matematicas'}">Matemáticas</router-link>
         </div>
 
-        <router-view>
-
+        <router-view v-slot="{ Component }">
+            <transition name="fade" mode="out-in">
+                <component :is="Component" />
+            </transition>
         </router-view>
     </main>
 </template>
@@ -23,7 +25,8 @@
     }
     .circulo {
         font-size: 3rem;
-        background-color: gray;
+        background-color: grey;
+        box-shadow: 0px 10px 20px 10px rgba(0,0,0,0.4);
         width: $circle-radius;
         height: $circle-radius;
         border-radius: 50%;
@@ -33,7 +36,6 @@
 
     .circulo > a {
         width: 25rem;
-        height: 25rem;
         position: absolute;
         left: 0;
         top: 0;
@@ -46,5 +48,15 @@
         top: 50%;
         left: 50%;
         transform: translate( -50%, -50% );
+    }
+
+    .fade-enter-active,
+    .fade-leave-active {
+        transition: opacity 0.2s ease;
+    }
+
+    .fade-enter-from,
+    .fade-leave-to {
+    opacity: 0;
     }
 </style>
