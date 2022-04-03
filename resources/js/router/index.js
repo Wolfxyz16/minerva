@@ -3,6 +3,7 @@ import Inicio from "../views/Inicio.vue";
 import Nosotros from "../views/Nosotros.vue";
 import FisicaInicio from "../views/fisica/FisicaInicio.vue";
 import MatematicasInicio from "../views/matematicas/MatematicasInicio.vue";
+import Examen from "../views/Examen.vue"
 
 const routes = [
 //   { 
@@ -38,6 +39,14 @@ const routes = [
         title: 'Sobre nosotros'
     }
   },
+  {
+    path: "/examen",
+    name: "Examen",
+    component: Examen,
+    meta : {
+      title: 'Crear un examen'
+    }
+  }
 ];
 
 const router = createRouter({
