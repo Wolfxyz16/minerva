@@ -31,6 +31,7 @@
     $shadows-big:    multiple-box-shadow(100);
 
     #stars {
+        position: absolute;
         width: 1px;
         height: 1px;
         background: transparent;
@@ -48,7 +49,8 @@
         }
     }
 
-    #stars1 {
+    #stars2 {
+        position: absolute;
         width: 2px;
         height: 2px;
         background: transparent;
@@ -67,6 +69,7 @@
     }
 
     #stars3 {
+        position: absolute;
         width: 3px;
         height: 3px;
         background: transparent;

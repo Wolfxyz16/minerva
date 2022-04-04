@@ -4,12 +4,6 @@
             <router-link :to="{name: 'Fisica'}">Física</router-link>
             <router-link :to="{name: 'Matematicas'}">Matemáticas</router-link>
         </div>
-
-        <router-view v-slot="{ Component }">
-            <transition name="fade" mode="out-in">
-                <component :is="Component" />
-            </transition>
-        </router-view>
     </main>
 </template>
 
@@ -36,10 +30,6 @@
 
     .circulo > a {
         width: 25rem;
-        position: absolute;
-        left: 0;
-        top: 0;
-        border-start-start-radius: 50%;
     }
 
     .circulo::after {
@@ -48,15 +38,5 @@
         top: 50%;
         left: 50%;
         transform: translate( -50%, -50% );
-    }
-
-    .fade-enter-active,
-    .fade-leave-active {
-        transition: opacity 0.2s ease;
-    }
-
-    .fade-enter-from,
-    .fade-leave-to {
-    opacity: 0;
     }
 </style>
