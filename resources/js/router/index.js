@@ -18,18 +18,6 @@ const routes = [
     meta: {
         title: 'Minerva - Inicio'
     },
-    children: [
-      {
-        path: "fisica",
-        name: "Fisica",
-        component: FisicaInicio
-      },
-      {
-        path: "matematicas",
-        name: "Matematicas",
-        component: MatematicasInicio
-      }
-    ]
   },
   {
     path: "/nosotros",
@@ -45,6 +33,22 @@ const routes = [
     component: Examen,
     meta : {
       title: 'Crear un examen'
+    }
+  },
+  {
+    path: "/fisica",
+    name: "Fisica",
+    component: FisicaInicio,
+    meta :  {
+      tittle: 'Física'
+    }
+  },
+  {
+    path: "/matematicas",
+    name: "Matematicas",
+    component: MatematicasInicio,
+    meta : {
+      tittle : "Matemáticas"
     }
   }
 ];
