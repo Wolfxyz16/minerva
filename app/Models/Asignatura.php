@@ -8,6 +8,12 @@ use Illuminate\Database\Eloquent\Model;
 class Asignatura extends Model
 {
     use HasFactory;
+    /**
+     * The table associated with the model.
+     *
+     * @var string
+     */
+    protected $table = 'asignaturas';
 
     /**
      * The attributes that are mass assignable.
@@ -16,7 +22,5 @@ class Asignatura extends Model
      */
     protected $fillable = [
         'nombre',
-        '',
-        'password',
     ];
 }

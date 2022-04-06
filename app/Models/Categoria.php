@@ -4,9 +4,9 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use App\Models\Categoria;
+use App\Models\Asignatura;
 
-class Ejercicio extends Model
+class Categoria extends Model
 {
     use HasFactory;
 
@@ -15,7 +15,7 @@ class Ejercicio extends Model
      *
      * @var string
      */
-    protected $table = 'ejercicios';
+    protected $table = 'categorias';
 
     /**
      * The attributes that are mass assignable.
@@ -23,16 +23,15 @@ class Ejercicio extends Model
      * @var array<int, string>
      */
     protected $fillable = [
-        'enunciado',
-        'preguntas',
-        'soluciones',
+        'nombre',
+        'asignatura',
     ];
 
     /**
-     * Devuelve la categoria del ejercicio
+     * Devuelve la asignatura de la categoria
      */
-    public function categoria() 
+    public function asignatura() 
     {
-        return $this->belongsTo(Categoria::class);
+        return $this->belongsTo(asignatura::class);
     }
 }
