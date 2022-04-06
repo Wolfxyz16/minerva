@@ -18,7 +18,7 @@ return new class extends Migration
             $table->text('enunciado');
             $table->json('preguntas');
             $table->json('respuestas');
-            $table->foreign('categoria_id')->references('id')->on('categorias');
+            $table->foreignId('categoria_id')->constrained('categorias');
             $table->timestamps();
         });
     }

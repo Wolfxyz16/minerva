@@ -16,7 +16,7 @@ return new class extends Migration
         Schema::create('categorias', function (Blueprint $table) {
             $table->id();
             $table->string('nombre');
-            $table->foreign('asignatura_id')->references('asignaturas')->on('id');
+            $table->foreignId('asignatura_id')->constrained('asignaturas');
             $table->timestamps();
         });
     }
