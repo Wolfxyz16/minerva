@@ -3,7 +3,8 @@ import Inicio from "../views/Inicio.vue";
 import Nosotros from "../views/Nosotros.vue";
 import FisicaInicio from "../views/fisica/FisicaInicio.vue";
 import MatematicasInicio from "../views/matematicas/MatematicasInicio.vue";
-import Examen from "../views/Examen.vue"
+import Examen from "../views/Examen.vue";
+import InicioSesion from "../views/InicioSesion.vue";
 
 const routes = [
 //   { 
@@ -49,6 +50,14 @@ const routes = [
     component: MatematicasInicio,
     meta : {
       tittle : "Matemáticas"
+    }
+  },
+  {
+    path: "/iniciar-sesion",
+    name: "Inicio Sesion",
+    component: InicioSesion,
+    meta : {
+      tittle : "Inicio de sesion"
     }
   }
 ];
