@@ -13,8 +13,13 @@
     --star-light-color: hsla(46, 100, 50, 1);
 }
 
+::-moz-selection {
+    background: var(--star-light-color);
+    color: #050505;
+}
+
 ::selection {
-    background-color: #BFB900;
+    background: var(--star-light-color);
     color: #050505;
 }
 
