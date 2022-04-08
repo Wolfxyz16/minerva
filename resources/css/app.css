@@ -5,6 +5,14 @@
     src: url(/font/MPLUS1-VariableFont_wght.ttf);
 }
 
+:root {
+    --main-dark-color: hsla(0, 0, 5, 1);
+    --main-bright-color: hsla(0, 0, 94, 1);
+    --deep-space-1-color: hsla(182, 100, 13, 1);
+    --deep-space-2-color: hsla(227, 81, 12, 1);
+    --star-light-color: hsla(46, 100, 50, 1);
+}
+
 html {
     height: 100%;
     color: #F1F1F1;
