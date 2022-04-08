@@ -20,9 +20,8 @@
         display: flex;
         flex-flow: column nowrap;
         aside {
-            min-width: 100%;
+            min-width: 33%;
             list-style: none;
-            margin: 1rem 0;
             padding: 0;
             flex: 1 1 auto;
             display: flex;
